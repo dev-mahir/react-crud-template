@@ -1,0 +1,214 @@
+$red: #f5222db7;
+$blue: hsl(207, 91%, 42%);
+$dblue: #262161;
+$gray: #778899;
+$green: #61CE70;
+
+
+$shadow: rgba(0,0,0,.15);
+
+
+
+a{
+    text-decoration: none;
+}
+img{
+    object-fit: cover;
+}
+ul,li,p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+
+
+
+
+
+.mshadow{
+    box-shadow:.5rem 1rem $shadow !important;
+}
+
+
+
+
+
+
+
+.bgred-1 {
+    background: #fff1f0;
+}
+.bgred-2 {
+    background: #ffccc7;
+}
+.bgred-3 {
+    background: #ffa39e;
+}
+.bgred-4 {
+    background: #ff7875;
+}
+.bgred-5 {
+    background: #ff4d4f;
+}
+
+.bgblue {
+    background: #40a9ff;
+}
+
+.bgdblue {
+    background: $dblue;
+}
+.bggreen {
+    background: $green;
+}
+.green {
+    color: $green;
+}
+
+.red {
+    color: $red;
+}
+
+.white{
+    color: #fff;
+}
+.dblue {
+    color: $dblue;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.mbg-danger {
+    background: rgb(233, 68, 68);
+}
+.mbg-success {
+    background: rgb(112, 148, 30);
+}
+
+.mbg-primary {
+    background: rgba(0, 0, 255, 0.623);
+}
+.mbg-gray {
+    background: gray;
+}
+.mbg-black {
+    background: rgba(51, 51, 51, 0.877);
+}
+.mbg-eee {
+    background: #eee;
+}
+
+.mcard {
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    border-radius: 0.25rem;
+    padding: 8px 10px;
+}
+
+.mbtn {
+    padding: 3px 10px;
+    border-radius: 0.13rem;
+    font-size: 15px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border-color: transparent;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.mbtn-blue {
+    color: #fff;
+    background: $blue;
+    &:hover{
+        color: #fff;
+    }
+}
+
+.mbtn-gray {
+    color: #fff;
+    background: $gray;
+}
+.mbtn-red {
+    color: #fff;
+    background: $red;
+}
+.mbtn:hover {
+    opacity: 0.9;
+}
+
+label {
+    font-size: 14px;
+}
+
+.mform-control {
+    display: block;
+    padding: 0.28rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4dae8;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.mform-select {
+    width: 100%;
+    display: block;
+    padding: 0.28rem 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    border: 1px solid #ced4dae8;
+    line-height: 1.5;
+}
+
+.mform-select:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: $blue;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+}
+.mform-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: $blue;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem transparent;
+}
+
+.db {
+    display: flex;
+    justify-content: space-between;
+}
+.dbc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.jcc {
+    display: flex;
+    justify-content: center;
+}
+
+.vhc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hcenter {
+    display: flex;
+    justify-content: center;
+}
+.vcenter {
+    display: flex;
+    align-items: center;
+}

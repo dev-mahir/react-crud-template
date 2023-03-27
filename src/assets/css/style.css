@@ -1,0 +1,21 @@
+body{
+    background: #eee;
+}
+.home img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+tr{
+    vertical-align: middle;
+}
+
+.view ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+.view ul li strong {
+    width: 78px;
+    display: inline-block;
+}
