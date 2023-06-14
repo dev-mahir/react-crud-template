@@ -1,19 +1,8 @@
-import { useQuery } from '@apollo/client';
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import { Header } from '../components/Header'
-import { GET_USER } from '../graphql/query';
 
 const View = () => {
-    const { id } = useParams();
-
-    const { loading, error, data } = useQuery(GET_USER, { variables: { userId: "1" } })
-
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error.message}</p>;
-
-    const { firstName,lastName, email } = data.user;
-
 
 
     return (
@@ -30,8 +19,8 @@ const View = () => {
                                 </div>
                                 <div className='w-50'>
                                     <ul>
-                                        <li> <strong>Name</strong>: {firstName} {lastName}</li>
-                                        <li> <strong>Email</strong>: {email}</li>
+                                        <li> <strong>Name</strong>: Md Mahir</li>
+                                        <li> <strong>Email</strong>: mdairds</li>
                                         <li> <strong>Phone</strong>: Md Mahir</li>
                                         <li> <strong>Location</strong>: Md Mahir</li>
                                     </ul>

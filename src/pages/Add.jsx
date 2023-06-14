@@ -1,13 +1,10 @@
-import { useMutation } from '@apollo/client';
 import React, { useState } from 'react'
 import { Header } from '../components/Header'
-import { CreateUser } from '../graphql/mutation';
+
 
 const Add = () => {
     const [input, setInput] = useState({});
-    const [addUser, {loading, error, data}] = useMutation(CreateUser, { variables: {input} });
 
-    console.log(data);
     const handleInputChange = (e) => { 
     
         setInput({
@@ -17,7 +14,6 @@ const Add = () => {
     }
     const handleCreateUser = (e) => {
         e.preventDefault();
-        addUser()
     }
 
 
